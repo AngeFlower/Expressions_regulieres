@@ -13,4 +13,8 @@ def Smart(telephone):
 
 def Onamob(telephone):
 	return re.match("^77([ ]?[0-9]{3}){2}$",telephone)
-print(Onamob("7768543245"))
+#print(Onamob("77685432"))
+
+def Email(nom):
+	return re.match("^([\w])+(@)+(gmail.)+([a-z]+)",nom)
+print (Email("ange257@gmail.bi"))
