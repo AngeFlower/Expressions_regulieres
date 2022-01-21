@@ -16,5 +16,16 @@ def Onamob(telephone):
 #print(Onamob("77685432"))
 
 def Email(nom):
-	return re.match("^([\w])+(@)+(gmail.)+([a-z]+)",nom)
-print (Email("ange257@gmail.bi"))
+	return re.match("^([\w])+(@)+[(gmail.)]+([a-z]+)",nom)
+#print (Email("ange257@gmail.com"))
+
+def Lumicash(code):
+	return re.match("^[*][0-9]+(#)",code)
+#print(Lumicash("*163#"))
+
+def Lumicash(code):
+	return re.match("^[*][0-9]+(#)+[0-9]+[*]",code)
+#print(Lumicash("*163#1*"))
+def Lumicash(code):
+	return re.match("^[*][0-9]+(#)+[0-9]+[*]+[0-9]+[*]",code)
+print(Lumicash("*163#1*1*"))
