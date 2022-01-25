@@ -28,4 +28,8 @@ def Lumicash(code):
 #print(Lumicash("*163#1*"))
 def Lumicash(code):
 	return re.match("^[*][0-9]+(#)+[0-9]+[*]+[0-9]+[*]",code)
-print(Lumicash("*163#1*1*"))
+#print(Lumicash("*163#1*1*"))
+
+def Lumicash(code):
+	return re.match("^[*][0-9]+(#)+[0-9]+[*]+[0-9]+[*]",code)
+#print(Lumicash("*163#1*1*"))
